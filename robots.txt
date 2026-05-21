@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://australian-shepherd-club.github.io/sitemap.xml
