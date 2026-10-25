@@ -173,6 +173,43 @@ padding:32px max(20px,calc((100% - 1120px)/2)) 30px}
 @media(max-width:760px){.home-photo-hero{grid-template-columns:minmax(0,1fr)}
 .sd-cover:has(>.home-editorial-photo){grid-template-columns:minmax(0,1fr)}}
 </style>
+
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Australian Shepherd Guide: Exercise, Herding Habits and Coat Care for Aussie Owners">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://australian-shepherd-club.github.io/">
+<meta property="og:description" content="Practical guides for Australian Shepherd owners: exercise by age, herding in a small home, time alone, mini vs standard size, and why the double coat shouldn&#x27;t be shaved.">
+<meta property="og:image" content="https://australian-shepherd-club.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://australian-shepherd-club.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="blue merle Australian Shepherd standing alert on a hillside pasture at golden hour">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Australian Shepherd Guide: Exercise, Herding Habits and Coat Care for Aussie Owners">
+<meta name="twitter:description" content="Practical guides for Australian Shepherd owners: exercise by age, herding in a small home, time alone, mini vs standard size, and why the double coat shouldn&#x27;t be shaved.">
+<meta name="twitter:image" content="https://australian-shepherd-club.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="blue merle Australian Shepherd standing alert on a hillside pasture at golden hour">
+<!-- social-cards:end -->
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -191,7 +228,7 @@ padding:32px max(20px,calc((100% - 1120px)/2)) 30px}
 <figure class="home-editorial-photo" data-home-photo="20261025"><img src="/assets/home-editorial-20261025.webp" alt="blue merle Australian Shepherd standing alert on a hillside pasture at golden hour - AI-generated illustration" width="1536" height="1024" fetchpriority="high" decoding="async" data-ai-generated="true"><figcaption>AI-generated illustration.</figcaption></figure>
 </section>
 <main class="main">
-<div class="home-grid">
+<div class="home-grid" data-follow-parent="true">
 <div>
 <h2>Guides, newest first</h2>
 <p class="section-lead">Energy and herding habits are what Aussie owners ask about most. Start with the one that matches your week.</p>
@@ -246,7 +283,7 @@ padding:32px max(20px,calc((100% - 1120px)/2)) 30px}
 </article>
 </div>
 </div>
-<aside class="rail" aria-label="About this journal">
+<aside class="rail" aria-label="About this journal" data-follow-sidebar="existing">
 <section class="sidebar-panel" aria-labelledby="author-h"><h2 id="author-h">Written by</h2><p class="rail-name">Megan Hale</p><p>Megan writes for people who fell for an Aussie&#x27;s eyes and then found out how much dog comes with them. She is not a veterinarian or professional trainer: guides link their sources in the text and say so where the evidence is thin.</p><p><a href="/about.html">About the site</a> · <a href="/editorial-policy.html">How we check guides</a></p></section>
 <nav class="sidebar-panel" aria-label="Topics"><h2>Topics</h2><ul><li><a href="/blog.html#coat"><span>Coat</span><span>1</span></a></li><li><a href="/blog.html#behavior"><span>Behavior</span><span>3</span></a></li><li><a href="/blog.html#exercise"><span>Exercise</span><span>1</span></a></li><li><a href="/blog.html#size"><span>Size</span><span>1</span></a></li><li><a href="/blog.html#grooming"><span>Grooming</span><span>1</span></a></li></ul></nav>
 </aside>
