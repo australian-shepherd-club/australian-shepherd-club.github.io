@@ -38,9 +38,16 @@
 @media(max-width:1024px){.layout{grid-template-columns:minmax(0,1fr) 250px;gap:24px}.asc-hero{gap:25px}.asc-steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:767px){.asc-mast>div{padding:18px 20px}.asc-nav{display:none}.asc-mobile{display:block}.asc-mobile nav{position:absolute;right:15px;background:var(--asc-khaki);padding:24px;z-index:5}.asc-mobile a{display:block;padding:12px;color:white;font-weight:bold}.asc-wrap,.layout{padding:26px 20px}.layout,.asc-hero,.asc-paths,.asc-cards,.asc-footer>div{grid-template-columns:1fr}.article{padding:20px}.asc-coordinate{transform:none}.asc-brand{font-size:18px}.asc-steps{grid-template-columns:1fr}h1{font-size:32px}.sidebar{display:block}}
 @media print{body{background:white;color:black}.asc-mast,.asc-footer,.sidebar,.asc-no-print,.asc-finish{display:none!important}.layout{display:block;padding:0}.article{border:0;padding:0}#asc-result{border:1px solid black}button{display:none}h1{font-size:26px}}
+</style><style id="asc-wayfinding">/* Skip link appears only on keyboard focus; post breadcrumbs lead the hero. */
+.asc-skip{position:absolute;left:-999px;top:8px;z-index:50;background:var(--asc-paper);border:2px solid var(--asc-rust);padding:10px 16px;font:700 15px/1.4 var(--asc-sans);text-decoration:none}
+.asc-skip,.asc-skip:visited{color:var(--asc-ink)}.asc-skip:focus{left:8px}
+.asc-article-hero .article-breadcrumb{margin:0 0 16px;gap:2px 8px;line-height:1.5;color:var(--asc-ink)}
+.asc-article-hero .article-breadcrumb a,.asc-article-hero .article-breadcrumb a:visited{color:var(--asc-khaki);font-weight:700}
+.asc-article-hero .article-breadcrumb [aria-current]{min-width:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media print{.asc-skip{display:none!important}}
 </style></head>
 <body>
-<a class="skip" href="#content">Skip to content</a>
+<a class="asc-skip" href="#content">Skip to content</a>
 <header class="asc-mast"><div><a class="asc-brand" href="/">AUSTRALIAN<br>SHEPHERD CLUB / ↗</a><nav class="asc-nav" aria-label="Main"><a href="/blog.html">Field guides</a><a href="/aussie-sport-quiz.html">Sport quiz →</a><a href="/about.html">About</a></nav><details class="asc-mobile"><summary>Explore ↓</summary><nav aria-label="Mobile"><a href="/blog.html">Field guides</a><a href="/aussie-sport-quiz.html">Sport quiz →</a><a href="/about.html">About</a></nav></details></div></header>
 
 <div class="follow-sidebar-layout"><main class="wrap" id="content" data-follow-content="true">
