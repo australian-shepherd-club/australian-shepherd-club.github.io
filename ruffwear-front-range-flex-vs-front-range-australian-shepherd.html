@@ -157,6 +157,17 @@
 @media(max-width:1024px){.layout{grid-template-columns:minmax(0,1fr) 250px;gap:24px}.asc-hero{gap:25px}.asc-steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:767px){.asc-mast>div{padding:18px 20px}.asc-nav{display:none}.asc-mobile{display:block}.asc-mobile nav{position:absolute;right:15px;background:var(--asc-khaki);padding:24px;z-index:5}.asc-mobile a{display:block;padding:12px;color:white;font-weight:bold}.asc-wrap,.layout{padding:26px 20px}.layout,.asc-hero,.asc-paths,.asc-cards,.asc-footer>div{grid-template-columns:1fr}.article{padding:20px}.asc-coordinate{transform:none}.asc-brand{font-size:18px}.asc-steps{grid-template-columns:1fr}h1{font-size:32px}.sidebar{display:block}}
 @media print{body{background:white;color:black}.asc-mast,.asc-footer,.sidebar,.asc-no-print,.asc-finish{display:none!important}.layout{display:block;padding:0}.article{border:0;padding:0}#asc-result{border:1px solid black}button{display:none}h1{font-size:26px}}
+</style><style id="asc-post-hero">/* Post hero follows the article column, including its responsive gutters. */
+.asc-article-hero{max-width:1240px;margin:auto;padding:40px 32px;display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:42px}
+.asc-article-hero .hero-inner{min-width:0;width:100%;max-width:none}
+.asc-article-hero h1{font-size:clamp(30px,3vw,42px);overflow-wrap:anywhere}
+.asc-article-hero .lead{max-width:100%;overflow-wrap:anywhere}
+.asc-article-hero .hero-photo{margin:24px 0 0;max-width:100%}
+.asc-article-hero .hero-photo img{display:block;width:100%;height:auto}
+@media(min-width:1025px) and (max-width:1439px){.asc-article-hero{padding-left:48px;padding-right:48px}}
+@media(max-width:1024px){.asc-article-hero{grid-template-columns:minmax(0,1fr) 250px;gap:24px}}
+@media(max-width:767px){.asc-article-hero{padding:26px 20px;grid-template-columns:minmax(0,1fr)}.asc-article-hero h1{font-size:32px}}
+@media print{.asc-article-hero{display:block;padding:0}.asc-article-hero h1{font-size:26px}}
 </style></head>
 <body>
 <header class="asc-mast"><div><a class="asc-brand" href="/">AUSTRALIAN<br>SHEPHERD CLUB / ↗</a><nav class="asc-nav" aria-label="Main"><a href="/blog.html">Field guides</a><a href="/aussie-sport-quiz.html">Sport quiz →</a><a href="/about.html">About</a></nav><details class="asc-mobile"><summary>Explore ↓</summary><nav aria-label="Mobile"><a href="/blog.html">Field guides</a><a href="/aussie-sport-quiz.html">Sport quiz →</a><a href="/about.html">About</a></nav></details></div></header>
@@ -164,7 +175,7 @@
 <a class="skip" href="#content">Skip to content</a>
 
 
-<section class="hero">
+<section class="hero asc-article-hero">
   <div class="hero-inner with-photo">
     <p class="kicker">Gear review</p>
     <h1>Ruffwear Front Range Flex Harness Review 2026: Knit Flex vs Original Front Range for an Australian Shepherd</h1>
